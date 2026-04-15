@@ -37,7 +37,7 @@ fn main() {
     println!("🎯 Event count: {} (type: u64)", event_count);
 
     // Choose category - returns usize for safe indexing
-    let options = vec!["red", "green", "blue"];
+    let options: Vec<_> = vec!["red", "green", "blue"];
     let (category_idx, _) = runtime::handler::run(
         runtime::interpreters::PriorHandler {
             rng: &mut rng,
