@@ -52,3 +52,14 @@ fn main() {
 
     println!("✅ Fugue is working correctly!");
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_main_runs() {
+        // This test verifies that main() runs without panicking
+        main();
+    }
+}
